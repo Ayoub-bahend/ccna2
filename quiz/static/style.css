@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.question-container {
+    margin-bottom: 20px;
+}
+
+.feedback {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.next-question {
+    margin-top: 20px;
+}
+
+.quiz-end {
+    margin-top: 30px;
+}
+
+.image-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;  /* L'image prendra toute la largeur disponible de son conteneur */
+    height: auto;     /* L'image garde son ratio d'aspect */
+    margin-top: 20px; /* Espacement au-dessus de l'image */
+    display: block;   /* Centrer l'image */
+    margin-left: auto;
+    margin-right: auto; /* Centrer l'image horizontalement */
+}

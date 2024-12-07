@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>Question {{ question_index + 1 }}</h1>
+    <div class="question-container">
+        <p><strong>{{ question['question'] }}</strong></p>
+
+        <!-- Affichage de l'image si elle existe -->
+        {% if question['image'] %}
+            <div class="image-container">
+                <img src="{{ question['image'] }}" alt="Image associée à la question" width="300">
+            </div>
+        {% endif %}
+
+        <form method="POST">
+            {% for option in question['options'] %}
+                <label>
+                    <input type="radio" name="answer" value="{{ option }}" required>
+                    {{ option }}
+                </label><br>
+            {% endfor %}
+            
+            <button class="btn" type="submit">Valider</button>
+        </form>
+    </div>
+
+    {% if feedback %}
+        <div class="feedback">
+            <p>{{ feedback }}</p>
+
+            <!-- Affichage de l'explication si elle existe -->
+            {% if question['explication'] %}
+                <p><strong>Explication :</strong> {{ question['explication'] }}</p>
+            {% endif %}
+        </div>
+    {% endif %}
+
+    {% if next_question_index is not none %}
+        <div class="next-question">
+            <p><a href="{{ url_for('quiz_page', question_index=next_question_index) }}" class="btn">Prochaine question</a></p>
+        </div>
+    {% else %}
+        <div class="quiz-end">
+            <p>Félicitations ! Vous avez terminé toutes les questions.</p>
+            <p><a href="{{ url_for('home') }}" class="btn">Recommencer le quiz</a></p>
+        </div>
+    {% endif %}
+
+</body>
+</html>

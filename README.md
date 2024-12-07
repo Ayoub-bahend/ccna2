@@ -1,5 +1,6 @@
-## execution 
+# machi sur mn ga3 les questions !
 
+## execution 
 ```
 cd quiz
 python3 quiz.py 

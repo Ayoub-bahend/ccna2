@@ -18,12 +18,12 @@ questions = [
     },
     {
         "question": "2. Faites correspondre le numéro d’étape à la séquence des étapes qui se produisent pendant le processus de basculement HSRP. (Les propositions ne doivent pas être toutes utilisées.)",
-        "options": [
+        "options": "",
+        "answer": [
             "Étape 1 : Le routeur de transfert échoue.",
             "Étape 2 : Le routeur en veille cesse de voir les messages Hello du routeur de transfert.",
             "Étape 3 : Le routeur de secours assume le rôle du routeur de transfert en utilisant à la fois les adresses IP et MAC du routeur virtuel."
         ],
-        "answer": "",
         "explanation": "",
         "image": "https://ccnareponses.com/wp-content/uploads/2021/12/2024-10-16_102955.jpg"
     },
@@ -76,7 +76,7 @@ questions = [
             "E. access – dynamic auto",
             "F. access – trunk"
         ],
-        "answer": ["B", "C", "D"],
+        "answer": "B, C, D",
         "explanation": "",
         "image": ""
     },
@@ -114,7 +114,7 @@ questions = [
             "E. esclave",
             "F. transparent"
         ],
-        "answer": ["D", "F"],
+        "answer": "D, F",
         "explanation": "Les modes VTP serveur et transparent permettent la création, la modification et la suppression des VLAN sur le commutateur local.",
         "image": ""
     },
@@ -144,12 +144,7 @@ questions = [
     },
     {
         "question": "12. Associez la description au type de VLAN correct. (Les options ne sont pas toutes utilisées.)",
-        "options": [
-            "VLAN par défaut : tous les ports de commutateur sont attribués à ce VLAN après le démarrage initial du commutateur.",
-            "VLAN de données : configuration destinée à acheminer le trafic généré par l’utilisateur.",
-            "VLAN natif : acheminement du trafic non étiqueté.",
-            "VLAN de gestion : une adresse IP et un masque de sous-réseau sont attribués à ce VLAN, ce qui permet l’accès au commutateur via HTTP, Telnet, SSH ou SNMP."
-        ],
+        "options": "",
         "answer": [
             "VLAN par défaut : tous les ports de commutateur sont attribués à ce VLAN après le démarrage initial du commutateur.",
             "VLAN de données : configuration destinée à acheminer le trafic généré par l’utilisateur.",
@@ -173,12 +168,7 @@ questions = [
     },
     {
         "question": "14. Associez l’état de la liaison au statut d’interface et de protocole. (Les options ne sont pas toutes utilisées.)",
-        "options": [
-            "operational : up/up",
-            "problème de couche 1 : down/down",
-            "problème de couche 2 : up/down",
-            "désactivé : Désactivé par un administrateur"
-        ],
+        "options": "",
         "answer": [
             "operational : up/up",
             "problème de couche 1 : down/down",
@@ -196,7 +186,7 @@ questions = [
             "C. Configurer une ACL et l’appliquer aux lignes VTY.",
             "D. Configurer 802.1x."
         ],
-        "answer": "",
+        "answer": "A",
         "explanation": "",
         "image": ""
     },
@@ -302,13 +292,13 @@ questions = [
     },
     {
         "question": "24. Associez les types de message DHCP à l’ordre du processus DHCPv4. (Les options ne doivent pas être toutes utilisées.)",
-        "options": [
+        "options": "",
+        "answer": [
             "A. Étape 1 : DHCPDISCOVER",
             "B. Étape 2 : DHCPOFFER",
             "C. Étape 3 : DHCPREQUEST",
             "D. Étape 4 : DHCPACK"
         ],
-        "answer": "",
         "explanation": "",
         "image": "https://ccnareponses.com/wp-content/uploads/2021/12/2024-10-15_161502.jpg"
     },
@@ -408,7 +398,7 @@ questions = [
             "E. automatique",
             "F. passif"
         ],
-        "answer": "A, D, E",
+        "answer": "C, D, E",
         "explanation": "Les trois modes d’établissement de canaux PAgP sont actif, desirable et automatique.",
         "image": ""
     },
@@ -447,7 +437,7 @@ questions = [
             "C. désactivation des ports CDP sur les ports périphériques",
             "D. activation de l’espionnage DHCP"
         ],
-        "answer": "D. activation de l’espionnage DHCP",
+        "answer": "D",
         "explanation": "L'activation de l'espionnage DHCP empêche les serveurs malveillants de fournir de faux paramètres IP.",
         "image": ""
     },
@@ -459,7 +449,7 @@ questions = [
             "C. SLAAC",
             "D. EUI-64"
         ],
-        "answer": "C. SLAAC",
+        "answer": "C",
         "explanation": "SLAAC (Stateless Address Autoconfiguration) utilise le préfixe contenu dans les messages RA pour configurer les adresses IPv6.",
         "image": ""
     },
@@ -471,7 +461,7 @@ questions = [
             "C. Débordement de la table d’adresses IP",
             "D. Double marquage VLAN"
         ],
-        "answer": "C. Débordement de la table d’adresses IP",
+        "answer": "C",
         "explanation": "L'outil macof est utilisé pour provoquer un débordement de la table d'adresses MAC d'un commutateur.",
         "image": ""
     },
@@ -483,7 +473,7 @@ questions = [
             "C. aussitôt qu’un client AAA a envoyé des informations d’authentification à un serveur centralisé",
             "D. dès que les ressources accessibles à un utilisateur ont été déterminées"
         ],
-        "answer": "B. immédiatement après une authentification réussie auprès d’une source de données AAA",
+        "answer": "B",
         "explanation": "L'autorisation est mise en œuvre après une authentification réussie, permettant l'accès aux ressources en fonction des droits de l'utilisateur.",
         "image": ""
     },
@@ -495,7 +485,7 @@ questions = [
             "C. ipv6 route ::1/0 serial 0/1/1",
             "D. ip route 0.0.0.0 0.0.0.0 serial 0/1/1"
         ],
-        "answer": "B. ipv6 route ::/0 serial 0/1/1",
+        "answer": "B",
         "explanation": "La commande `ipv6 route ::/0 serial 0/1/1` configure une route par défaut vers Internet pour les paquets IPv6 non répertoriés.",
         "image": "https://ccnareponses.com/wp-content/uploads/2021/12/2021-12-19_231809.jpg"
     },
@@ -507,7 +497,7 @@ questions = [
             "C. Route statique par défaut",
             "D. route statique standard"
         ],
-        "answer": "A. route statique flottante",
+        "answer": "A",
         "explanation": "Les routes statiques flottantes ont une distance administrative plus élevée que les routes dynamiques, et sont utilisées comme route de secours.",
         "image": ""
     },
@@ -562,16 +552,28 @@ questions = [
         "image": "https://ccnareponses.com/wp-content/uploads/2021/12/2021-12-19_232636.jpg"
     },
     {
-        "question": "45. Reportez-vous à l’illustration. Quelle commande de routage peut être entrée sur R1 pour activer une route par défaut pour le réseau IPv6 ?",
+        "question": "45. Reportez-vous à l’illustration. Quelle route a été configurée comme route statique vers un réseau spécifique en utilisant l’adresse du tronçon suivant ?",
         "options": [
-            "A. ipv6 route ::/0 serial 0/0/0",
-            "B. ipv6 route ::/0 serial 0/1/1",
-            "C. ipv6 route 2001:db8::/64 serial 0/0/0",
-            "D. ipv6 route 2001:db8::/64 serial 0/1/1"
+            "A. C 10.16.2.0/24 is directly connected, Serial0/0/0",
+            "B. S 0.0.0.0/0 [1/0] via 10.16.2.2",
+            "C. S 10.17.2.0/24 is directly connected, Serial 0/0/0",
+            "D. S 10.17.2.0/24 [1/0] via 10.16.2.2"
         ],
-        "answer": "B. ipv6 route ::/0 serial 0/1/1",
-        "explanation": "La commande `ipv6 route ::/0 serial 0/1/1` configure une route par défaut pour le trafic IPv6.",
-        "image": "https://ccnareponses.com/wp-content/uploads/2021/12/2021-12-19_233015.jpg"
+        "answer": "D",
+        "explanation": "",
+        "image": "https://ccnareponses.com/wp-content/uploads/2021/12/2021-12-19_232818.jpg"
+    },
+    {
+        "question": "46. RReportez-vous à l’illustration. Quel trunk ne transmettra aucun trafic au terme du processus de sélection de pont racine ?",
+        "options": [
+            "A. Trunk1",
+            "B. Trunk2",
+            "C. Trunk3",
+            "D. Trunk4"
+        ],
+        "answer": "B",
+        "explanation": "",
+        "image": "https://ccnareponses.com/wp-content/uploads/2021/12/2021-12-19_232945.jpg"
     },
 
     {
@@ -677,11 +679,7 @@ questions = [
     },
     {
         "question": "55. Associez la caractéristique de transmission à son type. (Les options ne sont pas toutes utilisées.)",
-        "options": [
-            "A. Full-duplex",
-            "B. Half-duplex",
-            "C. Simplex"
-        ],
+        "options": "",
         "answer": "",
         "explanation": "",
         "image": "https://ccnareponses.com/wp-content/uploads/2021/12/2021-12-03_224759.jpg"
@@ -693,9 +691,10 @@ questions = [
             "B. L’adresse MAC de destination et le port sortant",
             "C. Les adresses MAC source et de destination et le port sortant",
             "D. L’adresse MAC source et le port sortant",
-            "E. L’adresse MAC de destination et le port entrant"
+            "E. L’adresse MAC de destination et le port entrant",
+            "F. l’adresse MAC source et le port entrant"
         ],
-        "answer": "A",
+        "answer": "F",
         "explanation": "Un commutateur utilise l’adresse MAC source et le port entrant pour mettre à jour sa table d’adresses MAC.",
         "image": ""
     },
@@ -778,7 +777,8 @@ questions = [
     },
     {
         "question": "63. Associez l’étape à la description de la séquence d’amorçage du commutateur correspondante. (Les options ne doivent pas être toutes utilisées.)",
-        "options": [
+        "options": "",
+        "answer": [
             "A. Étape 1 : Exécution du POST",
             "B. Étape 2 : Chargement du programme d’amorçage à partir de la mémoire morte (ROM)",
             "C. Étape 3 : Initialisations du registre du processeur",
@@ -786,7 +786,6 @@ questions = [
             "E. Étape 5 : Charger le logiciel IOS",
             "F. Étape 6 : Contrôle de la commutation de transfert à l’IOS"
         ],
-        "answer": "",
         "explanation": "",
         "image": "https://ccnareponses.com/wp-content/uploads/2021/12/2024-10-16_070315.jpg"
     },
@@ -987,12 +986,12 @@ questions = [
     {
         "question": "80. Quel est le risque associé à la méthode de la base de données commune pour le protocole EAP ?",
         "options": [
-            "A. Le protocole est facile à contourner et à fausser.",
-            "B. Le secret partagé n’est pas suffisamment sécurisé.",
-            "C. Le serveur d’authentification peut être déporté.",
-            "D. Les informations peuvent être perdues lors de la synchronisation des bases de données."
+            "A. Les mots de passe peuvent être stockés uniquement en texte brut dans la configuration en cours.",
+            "B. Elle est très vulnérable aux attaques de force brute en raison de l’absence de nom d’utilisateur..",
+            "C. Elle n’offre aucun moyen d’établir les responsabilités.",
+            "D. Les comptes des utilisateurs doivent être configurés localement sur chaque appareil, ce qui est une solution d’authentification non évolutive."
         ],
-        "answer": "B",
+        "answer": "D",
         "explanation": "",
         "image": ""
     },
@@ -1215,14 +1214,19 @@ questions = [
     {
         "question": "98. Examinez l’illustration. Un commutateur de couche 3 se charge du routage pour trois VLAN et se connecte à un routeur pour la connectivité Internet. Comment le commutateur doit-il être configuré ? (Choisissez deux réponses.)",
         "options": [
-            "A. (config)# ip routing",
-            "B. (config)# interface gigabitethernet 1/1",
-            "C. (config-if)# no switchport",
-            "D. (config-if)# ip address 192.168.1.2 255.255.255.252",
-            "E. (config)# interface fastethernet0/4",
-            "F. (config-if)# switchport mode trunk"
+            "A. (config)# interface vlan 1",
+            "B. (config)# ip address 192.168.1.2 255.255.255.0",
+            "C. (config)# no shutdown",
+            "D. (config)# ip routing",
+            "E. (config)# interface gigabitethernet 1/1",
+            "F. (config-if)# no switchport",
+            "J. (config-if)# ip address 192.168.1.2 255.255.255.252",
+            "H. (config)# interface fastethernet0/4",
+            "I. (config-if)# switchport mode trunk",
+            "G. (config)# interface gigabitethernet1/1",
+            "K. (config-if)# switchport mode trunk"
         ],
-        "answer": ["A", "B"],
+        "answer": "D, E, F, J",
         "explanation": "",
         "image": "https://ccnareponses.com/wp-content/uploads/2021/12/2022-01-13_090443.jpg"
     },
@@ -1406,7 +1410,7 @@ questions = [
             "D. Configurer tous les ports du nouveau commutateur en mode d’accès.",
             "E. Configurer le nom de domaine et le mot de passe VTP corrects sur le nouveau commutateur."
         ],
-        "answer": ["A", "E"],
+        "answer": "A, E",
         "explanation": "Le commutateur doit être en mode client VTP et avoir le bon nom de domaine et mot de passe pour recevoir les informations VTP.",
         "image": ""
     },
@@ -1419,7 +1423,7 @@ questions = [
             "D. 802.1x",
             "E. SNMP"
         ],
-        "answer": ["B", "C"],
+        "answer": "B, C",
         "explanation": "TACACS+ et RADIUS sont utilisés pour l’authentification AAA (Authentication, Authorization, Accounting).",
         "image": ""
     },
@@ -1707,6 +1711,13 @@ questions = [
         "image": ""
     },
     {
+        "question": "93. Faites correspondre le but avec son type de message DHCP. (Toutes les options ne sont pas utilisées.)",
+        "options": "",
+        "answer": "",
+        "explanation": "SSH (Secure Shell) est un protocole qui ajoute de la sécurité pour les connexions à distance en chiffrant les données échangées.",
+        "image": "https://ccnareponses.com/wp-content/uploads/2022/06/2020-01-20_232028.jpg"
+    },
+    {
         "question": "94. Quel protocole ajoute de la sécurité aux connexions à distance ?",
         "options": [
             "A. FTP",
@@ -1734,13 +1745,13 @@ questions = [
     },
     {
         "question": "97. Faites correspondre chaque type de message DHCP avec sa description. (Toutes les options ne sont pas utilisées.)",
-        "options": [
+        "options": "",
+        "answer": [
             "A. DHCPDISCOVER – un client initiant un message pour trouver un serveur DHCP",
             "B. DHCPOFFER – un serveur DHCP répondant à la requête initiale d’un client",
             "C. DHCPREQUEST – le client acceptant l’adresse IP fournie par le serveur DHCP",
             "D. DHCPACK – le serveur DHCP confirmant que le bail a été accepté"
         ],
-        "answer": "",
         "explanation": "Placez les options dans l’ordre suivant : A. DHCPDISCOVER, B. DHCPOFFER, C. DHCPREQUEST, D. DHCPACK.",
         "image": "https://ccnareponses.com/wp-content/uploads/2021/12/2020-01-20_225135-1.jpg"
     },
@@ -1792,9 +1803,18 @@ questions = [
         "G. Implémenter un protocole de routage",
         "H. Activation du routage IP",
         "I. En saisissant « pas de port de commutation » sur le port connecté au routeur",
+        "J. ajustement de la métrique d’itinéraire",
+        "J. installer une route statique",
         "J. Attribution des ports au VLAN natif",
-        "K. Modification du VLAN par défaut",
-        "L. Attribution de ports aux VLAN"
+        "K. modifier le VLAN par défaut",
+        "L. Attribution de ports aux VLAN",
+        "K. activation du routage IP",
+        "K. modifier le VLAN par défaut",
+        "K. en saisissant « pas de port de commutation » sur le port connecté au routeur",
+        "K. établissement de contiguïtés",
+        "K. attribution de ports aux VLAN",
+        "K. ajustement de la métrique d’itinéraire",
+        "K. attribution des ports au VLAN natif",
     ],
     "answers": {
         "Cas 1": [
